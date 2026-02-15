@@ -92,5 +92,19 @@ document.querySelectorAll('.replyBtn').forEach(btn => {
   });
 });
 
+  // backToTop btn
+  const backToTop = document.getElementById("backToTop");
 
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+      backToTop.classList.remove("hidden");
+    } else {
+      backToTop.classList.add("hidden");
+    }
+  });
+
+  backToTop.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 
