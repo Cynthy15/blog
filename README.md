@@ -6,7 +6,7 @@ This project is a conversion from a W3.CSS-based design to Tailwind CSS while ke
 
 ---
 
-## 📝 Project Overview
+##  Project Overview
 
 Jane BlogLife is a fashion and lifestyle blog that features:
 
@@ -20,7 +20,7 @@ Jane BlogLife is a fashion and lifestyle blog that features:
 
 ---
 
-## ⚡ How to Run Locally
+## How to Run Locally
 
 1. Clone the repository:
 
