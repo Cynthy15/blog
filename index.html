@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navigation bar -->
+  <div class="hidden sm:flex bg-black text-white justify-between px-4 py-2">
+    <div class="flex space-x-2">
+      <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fab fa-facebook-f"></i></a>
+      <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fab fa-instagram"></i></a>
+      <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fab fa-snapchat-ghost"></i></a>
+      <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fab fa-flickr"></i></a>
+      <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fab fa-twitter"></i></a>
+      <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+    <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fas fa-search"></i></a>
+  </div>
+
+  <!-- Main content -->
+  <div class="max-w-[1600px] mx-auto">
+
+    <!-- Header -->
+    <header class="bg-white text-center py-12">
+      <h1 class="text-6xl font-bold">JANE BLOGLIFE</h1>
+      <h6 class="text-lg mt-2">Welcome to the blog of <span class="bg-gray-200 px-2 py-1 rounded">Jane's world</span></h6>
+    </header>
+
+    <!-- Image header -->
+    <header class="relative w-full">
+      <img class="w-full h-auto" src="https://www.w3schools.com/w3images/jane.jpg" alt="Fashion Blog">
+      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-white">
+        <h1 class="text-4xl font-semibold">Jane's</h1>
+        <h1 class="text-7xl font-bold hidden sm:block">FASHION BLOG</h1>
+        <button class="mt-4 px-6 py-3 bg-white text-black font-semibold hover:opacity-100 opacity-60" 
+                onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button>
+      </div>
+    </header>
+
+    <!-- Blog grid -->
+    <div class="flex flex-col lg:flex-row border-t border-gray-300 p-4">
+
+      <!-- Blog entries -->
+      <div class="lg:w-2/3 w-full">
+
+        <!-- Blog entry 1 -->
+        <div class="bg-white my-4 p-6 shadow">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold">TITLE HEADING</h3>
+            <h5 class="text-gray-500 mt-1">Title description, <span>May 2, 2016</span></h5>
+          </div>
+          <div class="mt-4 text-justify">
+            <img src="https://www.w3schools.com/w3images/girl_hat.jpg" alt="Girl Hat" class="w-full mb-4">
+            <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <div class="flex justify-between mt-4">
+              <button class="px-4 py-2 border border-gray-400 bg-white hover:bg-gray-200" onclick="likeFunction(this)">
+                <b><i class="fa fa-thumbs-up"></i> Like</b>
+              </button>
+              <button class="px-4 py-2 bg-black text-white hover:bg-gray-800" onclick="myFunction('demo1')">
+                <b>Replies &nbsp;</b> <span class="bg-white text-black px-2 py-0.5 rounded-full">1</span>
+              </button>
+            </div>
+            <div id="demo1" class="mt-4 hidden">
+              <hr class="my-2">
+              <div class="flex space-x-4">
+                <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" class="w-24 h-24 object-cover">
+                <div>
+                  <h4 class="font-semibold">George <span class="text-gray-500 text-sm">May 3, 2015, 6:32 PM</span></h4>
+                  <p>Great blog post! Following</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Blog entry 2 -->
+        <div class="bg-white my-4 p-6 shadow">
+          <div class="text-center">
+            <h3 class="text-2xl font-bold">TITLE HEADING</h3>
+            <h5 class="text-gray-500 mt-1">Title description, <span>April 23, 2016</span></h5>
+          </div>
+          <div class="mt-4 text-justify">
+            <img src="https://www.w3schools.com/w3images/man_hat.jpg" alt="Men in Hats" class="w-full mb-4">
+            <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
+            <p>Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <div class="flex justify-between mt-4">
+              <button class="px-4 py-2 border border-gray-400 bg-white hover:bg-gray-200" onclick="likeFunction(this)">
+                <b><i class="fa fa-thumbs-up"></i> Like</b>
+              </button>
+              <button class="px-4 py-2 bg-black text-white hover:bg-gray-800" onclick="myFunction('demo2')">
+                <b>Replies &nbsp;</b> <span class="bg-white text-black px-2 py-0.5 rounded-full">2</span>
+              </button>
+            </div>
+            <div id="demo2" class="mt-4 hidden">
+              <hr class="my-2">
+              <div class="flex space-x-4">
+                <img src="https://www.w3schools.com/w3images/girl_train.jpg" class="w-24 h-24 object-cover">
+                <div>
+                  <h4 class="font-semibold">Amber <span class="text-gray-500 text-sm">April 26, 2015</span></h4>
+                  <p>Awesome blog post! Keep writing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
