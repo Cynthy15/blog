@@ -27,17 +27,31 @@
       <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fa fa-flickr"></i></a>
       <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fa fa-twitter"></i></a>
       <a href="index.html" class="px-2 py-1 hover:bg-gray-700"><i class="fa fa-linkedin-in"></i></a>
+
     </div>
 
-  </div>
+      <!-- Search -->
+      <div class="relative">
+
+        <button id="searchBtn" class="px-2 py-1 hover:bg-gray-700">
+          <i class="fa fa-search"></i>
+        </button>
+        <!-- Hidden search input -->
+        <input id="searchInput" type="text" placeholder="Search..." class="absolute right-0 top-0 mt-10 w-64 px-3 py-2 text-black rounded-md shadow-lg hidden" />
+        <!-- Search results -->
+        <div id="searchResults" class="absolute right-0 top-0 mt-20 w-64 bg-white text-black rounded-md shadow-lg hidden max-h-60 overflow-auto"></div>
+     
+      </div>
+
+    </div>
 
   <!-- Main content container -->
   <div class="mx-auto">
 
     <!-- Header -->
-    <header class="text-center py-12 bg-white">
-      <h1 class="text-6xl font-bold">JANE BLOGLIFE</h1>
-      <h6 class="mt-2 text-lg">Welcome to the blog of <span class="bg-gray-200 px-2 py-1 rounded">Jane's world</span></h6>
+    <header class="text-center py-16 bg-white">
+      <h1 class="text-5xl font-bold ">JANE BLOGLIFE</h1>
+      <h6 class="mt-2 text-md mt-[20px]">Welcome to the blog of <span class="bg-black text-white px-2 py-1">Jane's world</span></h6>
     </header>
 
     <!-- Image header -->
@@ -46,14 +60,13 @@
       <div class="absolute left-4 top-1/4 text-white space-y-2">
         <h1 class="text-4xl">Jane's</h1>
         <h1 class="hidden sm:block text-6xl font-bold">FASHION BLOG</h1>
-        <button onclick="document.getElementById('subscribe').style.display='block'" class="bg-white text-black px-6 py-3 text-lg opacity-80 hover:opacity-100">SUBSCRIBE</button>
+        <button class="bg-white text-black px-6 py-3 text-lg opacity-80 hover:opacity-100">SUBSCRIBE</button>
       </div>
     </header>
 
-    <!-- Grid -->
     <div class="flex flex-col lg:flex-row py-8 px-4 gap-6">
 
-      <!-- Blog Entries -->
+      <!-- Blog Entries wewe -->
       <div class="lg:w-2/3 space-y-8">
 
         <!-- Blog Entry 1 -->
@@ -67,11 +80,10 @@
             <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat...</p>
             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit...</p>
             <div class="flex justify-between items-center">
-              <button onclick="likeFunction(this)" class="px-4 py-2 border border-gray-300 rounded hover:bg-gray-100 flex items-center space-x-2"><i class="fa fa-thumbs-up"></i><span>Like</span></button>
-              <button onclick="myFunction('demo1')" id="myBtn" class="bg-black text-white px-4 py-2 rounded flex items-center space-x-2"><span>Replies</span><span class="bg-white text-black px-2 rounded">1</span></button>
+              <button class="likeBtn px-4 py-2 border border-gray-300 rounded flex items-center space-x-2"><i class="fa fa-thumbs-up"></i><span>like</span></button>
+              <button id="myBtn" class="bg-black text-white px-4 py-2 rounded flex items-center space-x-2"><span>Replies</span><span class="bg-white text-black px-2 rounded">1</span></button>
             </div>
-            <div id="demo1" class="hidden space-y-4 mt-4">
-              <hr>
+            <div id="demo1" class="space-y-4 mt-4">
               <div class="flex space-x-4">
                 <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" class="w-20 h-20 rounded-full">
                 <div>
@@ -93,8 +105,8 @@
             <img src="https://www.w3schools.com/w3images/man_hat.jpg" alt="Men in Hats" class="w-full rounded">
             <p><strong>Hats!</strong> The trend this summer is hats for men!</p>
             <div class="flex justify-between items-center">
-              <button onclick="likeFunction(this)" class="px-4 py-2 border border-gray-300 rounded flex items-center space-x-2"><i class="fa fa-thumbs-up"></i><span>Like</span></button>
-              <button onclick="myFunction('demo2')" class="bg-black text-white px-4 py-2 rounded flex items-center space-x-2">Replies <span class="bg-white text-black px-2 rounded">2</span></button>
+              <button class="likeBtn px-4 py-2 border border-gray-300 rounded flex items-center space-x-2"><i class="fa fa-thumbs-up"></i><span>like</span></button>
+              <button class="bg-black text-white px-4 py-2 rounded flex items-center space-x-2">Replies <span class="bg-white text-black px-2 rounded">2</span></button>
             </div>
             <div id="demo2" class="hidden space-y-4 mt-4">
               <hr>
@@ -119,8 +131,8 @@
             <img src="https://www.w3schools.com/w3images/runway.jpg" alt="Runway" class="w-full rounded">
             <p><strong>Don't miss!</strong> The runway in New York City this weekend is gonna be legendary!</p>
             <div class="flex justify-between items-center">
-              <button onclick="likeFunction(this)" class="px-4 py-2 border border-gray-300 rounded flex items-center space-x-2"><i class="fa fa-thumbs-up"></i><span>Like</span></button>
-              <button onclick="myFunction('demo3')" class="bg-black text-white px-4 py-2 rounded flex items-center space-x-2">Replies <span class="bg-white text-black px-2 rounded">3</span></button>
+              <button class="likeBtn px-4 py-2 border border-gray-300 rounded flex items-center space-x-2"><i class="fa fa-thumbs-up"></i><span>like</span></button>
+              <button class="bg-black text-white px-4 py-2 rounded flex items-center space-x-2">Replies <span class="bg-white text-black px-2 rounded">3</span></button>
             </div>
             <div id="demo3" class="hidden space-y-4 mt-4">
               <hr>
@@ -184,7 +196,7 @@
           </ul>
         </div>
 
-        <!-- Advertising -->
+        <!-- Ads -->
         <div class="bg-white rounded shadow">
           <div class="bg-black text-white p-4 font-bold">Advertise</div>
           <div class="h-48 bg-gray-200 flex items-center justify-center">Your AD Here</div>
@@ -227,8 +239,8 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white p-8 text-center">
-    <a href="#top" class="inline-block bg-black px-6 py-3 mb-4 hover:bg-gray-900"><i class="fa fa-arrow-up mr-2"></i>To the top</a>
+  <footer class="bg-gray-500 text-white p-8">
+    <a href="#top" id="backToTop" class="inline-block bg-black px-6 py-3 mb-4 hover:bg-gray-900 hidden"><i class="fa fa-arrow-up mr-2"></i>To the top</a>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="underline hover:text-gray-300">w3.css</a></p>
   </footer>
   <script src="script.js"></script>
